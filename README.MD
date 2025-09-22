@@ -64,17 +64,17 @@ Está diseñado para funcionar tanto en **entornos locales de desarrollo** como 
 ---
 
 ## Estructura del proyecto
-
-    ```bash
-        infraestructura/
+    
+```plaintext    
+    infraestructura/
         │── backups/        # Copias de seguridad de las bases de datos
         │── logs/           # Archivos de logs de los servicios
         │── .env            # Variables de entorno (no se sube a git)
         │── .env.example    # Plantilla de variables de entorno
         │── .gitignore      # Archivos a ignorar en Git
         │── docker-compose.yml  # Definición de servicios en Docker
-
-    ```
+   
+```
 
 ---
 
