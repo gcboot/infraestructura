@@ -1,0 +1,27 @@
+# Archivos de entorno (nunca subir contraseñas)
+.env
+*.env
+
+# Respaldos (pueden ser muy grandes y contienen datos sensibles)
+backups/
+*.sql
+*.bak
+*.dump
+
+# Logs (se generan al correr contenedores)
+logs/
+*.log
+
+# Archivos de Docker temporales
+*.pid
+*.seed
+
+# Configuración local que no debe ir a git
+docker-compose.override.yml
+
+# Archivos de sistema / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
