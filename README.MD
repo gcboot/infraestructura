@@ -34,10 +34,13 @@ Está diseñado para funcionar tanto en **entornos locales de desarrollo** como 
    cd infraestructura
    ```
 
-2. Clonar el repositorio:
+2. Crear el archivo .env a partir del ejemplo:
+
    ```bash
    cp .env.example .env
+
    ```
+
 3. Configurar las variables en .env:
 
    ```env
@@ -57,7 +60,7 @@ Está diseñado para funcionar tanto en **entornos locales de desarrollo** como 
    - pgAdmin → http://localhost:5050
 
    - Postgres → localhost:5432
-  
+
 ---
 
 ## Estructura del proyecto
@@ -72,11 +75,12 @@ Está diseñado para funcionar tanto en **entornos locales de desarrollo** como 
         │── docker-compose.yml  # Definición de servicios en Docker
 
     ```
+
 ---
 
 ## Buenas Prácticas
 
-   - Nunca subir el archivo .env → contiene credenciales.
-   - Usar backups/ para respaldos automáticos (pg_dump).
-   - Revisar logs/ en caso de errores en los contenedores.
-   - Mantener contraseñas seguras y diferentes en desarrollo/producción.
+- Nunca subir el archivo .env → contiene credenciales.
+- Usar backups/ para respaldos automáticos (pg_dump).
+- Revisar logs/ en caso de errores en los contenedores.
+- Mantener contraseñas seguras y diferentes en desarrollo/producción.
